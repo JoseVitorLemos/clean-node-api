@@ -5,5 +5,9 @@ module.exports = {
   testEnvironment: 'node',
   transform: {
     '.+\\.ts$': 'ts-jest'
-  }
+  },
+	coveragePathIgnorePatterns: [
+		"<rootDir>/src/presentation/protocols/index.ts",
+		"<rootDir>/src/presentation/controllers/signup/signup-protocols.ts"
+	],
 }
